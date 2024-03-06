@@ -21,5 +21,9 @@ const assertArraysEqual = function(arr1, arr2) {
 console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`)
 }
 
+const without = function (source, itemsToRemove) {
+
+}
+
 console.log(assertArraysEqual(["hi", "hi"], ["hi", "hi"]));
 console.log(assertArraysEqual(["hi", "hi"], ["hi", "hello"]));
