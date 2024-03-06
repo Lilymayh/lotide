@@ -25,5 +25,5 @@ const assertArraysEqual = function(arr1, arr2) {
 console.log(`✅✅✅ Assertion Passed: ${arr1} === ${arr2}`)
 }
 
-console.log(assertArraysEqual(eqArrays(["hi", "hi"], ["hi", "hi"])))
-console.log(assertArraysEqual(eqArrays(["hi", "hi"], ["hi", "hello"])))
+console.log(assertArraysEqual(["hi", "hi"], ["hi", "hi"]));
+console.log(assertArraysEqual(["hi", "hi"], ["hi", "hello"]));
