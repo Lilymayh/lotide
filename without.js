@@ -30,5 +30,5 @@ const without = function(source, itemsToRemove) {
   return newArr
 }
 
-assertEqual(without([1, 2, 3], [1])) // => [2, 3]
-assertEqual(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
+assertArraysEqual(without([1, 2, 3], [1])) // => [2, 3]
+assertArraysEqual(without(["1", "2", "3"], [1, 2, "3"])) // => ["1", "2"]
