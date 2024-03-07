@@ -21,7 +21,6 @@ const countLetters = function(str) {
   return letterCount
 }
 
-const result1 = countLetters('')
+const result1 = countLetters('LHL')
 
-assertEqual(result1["LHL"])
-assertEqual(result1["lihthouse in the house"])
+assertEqual(result1["L", 2])
