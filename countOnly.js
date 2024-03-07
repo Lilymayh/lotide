@@ -13,11 +13,11 @@ const countOnly = function(allItems, itemsToCount) {
     if (itemsToCount[item]) {
     if (results[item]) {
       results[item] += 1;
+      console.log(item);
     } else {
       results[item] = 1;
     }
-  }
-    console.log(item);
+    }
   }
   return results
 }
