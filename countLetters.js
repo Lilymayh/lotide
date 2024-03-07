@@ -10,7 +10,7 @@ const countLetters = function(str) {
   const letterCount = {}
 
   for (const item of str) {
-    if (str != ' '){
+    if (item != ' '){
       if (letterCount[item]) {
         letterCount[item] += 1
       } else {
@@ -21,5 +21,7 @@ const countLetters = function(str) {
   return letterCount
 }
 
+const result1 = countLetters('')
 
-console.log(countLetters("lighthouse in the house"))
+assertEqual(result1["LHL"])
+assertEqual(result1["lihthouse in the house"])
