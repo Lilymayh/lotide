@@ -4,7 +4,7 @@ const middle = function(arr) {
   if (arr.length < 3) {
     return newArr
   }
-
+  
   const middleNum = Math.floor(arr.length / 2)
 
   if (arr.length % 2 === 0) {
