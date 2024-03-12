@@ -3,6 +3,7 @@ const middle = require('./middle')
 const tail   = require('./tail')
 const assertArraysEqual  = require('./assertArraysEqual')
 const  assertEqual = require('./assertEqual')
+const assertObjectsEqual = require('./assertObjectsEqual')
 const countLetters = require('./countLetters')
 const  countOnly = require('./countOnly')
 const eqArrays  = require('./eqArrays')
@@ -22,6 +23,7 @@ module.exports = {
 	middle: middle,
 	assertArraysEqual: assertArraysEqual,
 	assertEqual: assertEqual,
+	assertObjectsEqual: assertObjectsEqual,
 	countLetters: countLetters,
 	countOnly: countOnly,
 	eqArrays: eqArrays,
@@ -31,5 +33,5 @@ module.exports = {
 	letterPositions: letterPositions,
 	map: map,
 	takeUntil: takeUntil,
-	without: without
+	without: without,
 }

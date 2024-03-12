@@ -26,14 +26,14 @@ const letterPositions = function(sentence) {
     const letter = sentence[i]
 
     if (results[letter] != '') {
-      results[letter].push(i)
+      results[letter].push(Number(i))
     } else {
-      results[letter] = [i]
+      results[letter] = [Number(i)]
     }
   }
   return results;
 };
 
 
-console.log(assertArraysEqual(letterPositions("hello").e, [1]));
-console.log(assertArraysEqual(letterPositions("goodbye").e, [1]));
+console.log(assertArraysEqual(letterPositions("hello").e, [1])); //expected to pass
+console.log(assertArraysEqual(letterPositions("goodbye").e, [1])); //expected to fail 
