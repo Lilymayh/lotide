@@ -1,4 +1,3 @@
-const eqArrays = require('../eqArrays');
 const { assert } = require('chai');
 const middle = require('../middle');
 
