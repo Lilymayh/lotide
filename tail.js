@@ -1,4 +1,8 @@
 function tail(arr) {
+  if(arr.length <= 1) {
+    return []
+  }
+  
   return arr.slice(1);
 }
 
