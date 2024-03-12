@@ -10,13 +10,14 @@ const countLetters = function(str) {
   const letterCount = {}
 
   for (const item of str) {
-    if (item != ' '){
+    if (item === ' '){
+      continue;
+    }
       if (letterCount[item]) {
         letterCount[item] += 1
       } else {
         (letterCount[item]) = 1
       }
-    }
   }
   return letterCount
 }

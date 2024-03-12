@@ -9,15 +9,14 @@ const assertEqual = function(actual, expected) {
 //function that takes an array and a callback and returns the first key that returns a thruthy value
 
 const findKey = (obj, callback) => {
-  const newObj = {}
   const newObject = Object.keys(obj)
 
   for (const keys of newObject) {
     if (callback(obj[keys])) {
-      newObj[keys] = obj[keys]
+      break
     }
+    return undefined
   } 
-  return newObj
 }
 //tests
 
@@ -30,7 +29,7 @@ const results1 = findKey({
   "Akelarre":  { stars: 3 }
 }, x => x.stars === 2)
 
-console.log(assertEqual(results1["noma"].stars, 2))
+console.log(assertEqual(results1, 2))
 
 const results2 = findKey({
   "Cinderella": {power: 5},
@@ -39,4 +38,4 @@ const results2 = findKey({
   "Belle": {power: 5}
 }, x => x.power === 5)
 
-console.log(assertEqual(results2["Cinderella"].power, 6))
+console.log(assertEqual(results2, 6))
